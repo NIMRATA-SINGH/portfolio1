@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimrata Singh | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        background: '#060911',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body class="bg-background text-slate-100 selection:bg-cyan-500/30 selection:text-cyan-200 antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold font-mono text-cyan-400">&lt;Nimrata /&gt;</a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#education" class="hover:text-cyan-400 transition-colors">Education & Training</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+            </nav>
+            <button class="md:hidden text-2xl text-slate-300 hover:text-white" id="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-background border-b border-slate-800 px-6 py-4" id="mobile-menu">
+            <div class="flex flex-col gap-4">
+                <a href="#about" class="hover:text-cyan-400 transition-colors mobile-link">About</a>
+                <a href="#education" class="hover:text-cyan-400 transition-colors mobile-link">Education & Training</a>
+                <a href="#contact" class="hover:text-cyan-400 transition-colors mobile-link">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <p class="font-mono text-cyan-400 mb-4">Hi, my name is</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">Nimrata Singh.</h1>
+            <h2 class="text-4xl md:text-5xl font-bold text-slate-400">Welcome to my portfolio.</h2>
+            <p class="max-w-2xl mx-auto text-lg text-slate-400 leading-relaxed">
+                I'm a dedicated student and passionate learner focused on continuous growth and building a strong foundation in technology.
+            </p>
+            <div class="pt-8 flex justify-center gap-4">
+                <a href="#education" class="px-8 py-3 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/50 hover:bg-cyan-500 hover:text-white font-medium transition-all">My Background</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+            <span class="font-mono text-cyan-400 text-xl">01.</span> About Me
+            <div class="h-px bg-slate-800 flex-grow ml-4"></div>
+        </h2>
+        <div class="grid md:grid-cols-3 gap-12">
+            <div class="md:col-span-2 space-y-4 text-slate-400 text-lg leading-relaxed">
+                <p>Hello! My name is Nimrata Singh. I am highly motivated to learn and adapt to new challenges.</p>
+                <p>Throughout my academic journey, I have maintained a strong focus on achieving excellence. I enjoy expanding my skills through training programs and collaborative projects.</p>
+            </div>
+            <div class="relative group flex items-start justify-center">
+                <!-- Placeholder for profile picture -->
+                <div class="absolute -inset-2 rounded-xl bg-cyan-500/20 blur opacity-0 group-hover:opacity-100 transition duration-500"></div>
+                <div class="relative rounded-xl border border-slate-700 bg-slate-800/50 aspect-square w-full flex items-center justify-center">
+                    <i class="ph ph-user text-6xl text-slate-500"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Training Section -->
+    <section id="education" class="py-24 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold mb-12 flex items-center gap-4">
+            <span class="font-mono text-cyan-400 text-xl">02.</span> Education & Training
+            <div class="h-px bg-slate-800 flex-grow ml-4"></div>
+        </h2>
+        
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Education -->
+            <div>
+                <h3 class="text-2xl font-bold mb-6 text-slate-200"><i class="ph ph-graduation-cap text-cyan-400 mr-2"></i> Education</h3>
+                <div class="space-y-6">
+                    <div class="border-l-2 border-slate-800 pl-4 hover:border-cyan-400 transition-colors">
+                        <h4 class="text-lg font-semibold text-slate-200">12th Grade <span class="text-cyan-400 text-sm ml-2 font-mono">(87%)</span></h4>
+                        <p class="text-slate-400 font-mono text-sm mt-1">His excellence institute, Hoshiarpur, Punjab</p>
+                    </div>
+                    <div class="border-l-2 border-slate-800 pl-4 hover:border-cyan-400 transition-colors">
+                        <h4 class="text-lg font-semibold text-slate-200">10th Grade <span class="text-cyan-400 text-sm ml-2 font-mono">(90%)</span></h4>
+                        <p class="text-slate-400 font-mono text-sm mt-1">St Joseph's senior sec convent school, Hoshiarpur, Punjab</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training & Certificates -->
+            <div>
+                <h3 class="text-2xl font-bold mb-6 text-slate-200"><i class="ph ph-certificate text-cyan-400 mr-2"></i> Training</h3>
+                <div class="space-y-6">
+                    <div class="border-l-2 border-slate-800 pl-4 hover:border-cyan-400 transition-colors">
+                        <h4 class="text-lg font-semibold text-slate-200">CDP :- Times of india quiz</h4>
+                        <p class="text-cyan-400 font-mono text-sm mt-1">Training Program</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-6 max-w-2xl mx-auto text-center">
+        <p class="font-mono text-cyan-400 mb-4">03. What's Next?</p>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+        <p class="text-slate-400 text-lg mb-12">
+            I am currently open for new opportunities. Whether you have a question or just want to connect, feel free to drop a message!
+        </p>
+        <div class="flex flex-col gap-4 items-center mb-8 text-slate-300 font-mono">
+            <a href="mailto:nimratasingh9a@gmail.com" class="hover:text-cyan-400 transition-colors flex items-center gap-2"><i class="ph ph-envelope-simple text-xl"></i> nimratasingh9a@gmail.com</a>
+            <a href="tel:+917696863156" class="hover:text-cyan-400 transition-colors flex items-center gap-2"><i class="ph ph-phone text-xl"></i> +91 7696863156</a>
+        </div>
+        <a href="mailto:nimratasingh9a@gmail.com" class="px-8 py-4 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/50 hover:bg-cyan-500 hover:text-white font-medium transition-all inline-block">Say Hello</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-slate-500 font-mono text-sm">
+        <div class="flex justify-center gap-6 mb-4">
+            <a href="https://github.com/NIMRATA-SINGH" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors"><i class="ph ph-github-logo text-2xl"></i></a>
+            <a href="https://www.linkedin.com/in/nimrata06" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-400 transition-colors"><i class="ph ph-linkedin-logo text-2xl"></i></a>
+        </div>
+        <p>Designed for Nimrata Singh &bull; Built with HTML & Tailwind</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
